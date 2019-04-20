@@ -1,0 +1,17 @@
+---
+layout: "wrapper"
+author: "Mike"
+---
+
+<h1>Jekyll</h1>
+{% if page.title == "This is the new title" %}
+  this is the first posts
+{% elsif page.title == "Welcome to Jekyll!" %}
+  this is the jekyllr
+{% else %}
+  this is the another post
+{% endif %}
+<h2>{{ page.title}}</h2>
+<h3>{{ layout.author}}</h3>
+<hr>
+{{content}}
